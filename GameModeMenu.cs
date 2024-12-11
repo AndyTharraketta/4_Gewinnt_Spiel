@@ -21,10 +21,12 @@ namespace _4GewinntSpiel
             switch (select)
             {
                 case "1":
-                    Console.WriteLine("Hier wird der Einzelspieler Modus ausgewählt");      // Platzhalter für Kindklasse SingelPlayer
+                    Menu singlPlayerMenu = new SinglePlayerMenu();      // Auswahl Einzelspieler Menü
+                    singlPlayerMenu.ToShow();
                     break;
                 case "2":
-                    Console.WriteLine("Hier wird der Mehrspieler Modus ausgewählt");        // Platzhalter für Kindklasse MultiPlayer
+                    Menu multiPlayerMenu = new MultiPlayerMenu();       // Auswahl Mehrspieler Menü
+                    multiPlayerMenu.ToShow();
                     break;
                 case "3":
                     return;     // zurück zum Hauptmenü

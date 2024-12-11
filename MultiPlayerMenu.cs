@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _4GewinntSpiel
 {
-    internal class LanguageMenu : Menu
+    internal class MultiPlayerMenu : Menu
     {
         public override void ToShow()
         {
@@ -14,22 +14,19 @@ namespace _4GewinntSpiel
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("\t\t\t-Willkommen bei 4 Gewinnt-");
             // Spielmodus Auswahl
-            Console.WriteLine("\n\t\tOptionen\n\n\t-1-\tDeutsch\n\t-2-\tEnglisch\n\t-3-\tSpanisch\n\t-4-\tZurück zum Hauptmenü");
-            Console.Write("\nAuswahl: ");
+            Console.WriteLine("\n\t\tSpiel Modus\n\n\t-1-\tSpiel starten\n\t-2-\tEinstellung\n\t-3-\tZurück zum Hauptmenü");
+            Console.Write("\n\nAuswahl: ");
             string select = Console.ReadLine();
 
             switch (select)
             {
                 case "1":
-                    Console.WriteLine("Hier wird  ausgewählt");     // Platzhalter für Deutsch
+                    Console.WriteLine("Spiel starten");      // Platzhalter zum starten des Spiels
                     break;
                 case "2":
-                    Console.WriteLine("Hier wird  ausgewählt");     // Platzhalter für Englsich
+                    Console.WriteLine("Einstellung");        // Platzhalter für die Spiel Einstellung (z.B. Anzahl der Runden)
                     break;
                 case "3":
-                    Console.WriteLine("Hier wird  ausgewählt");     // Platzhalter für Spanisch
-                    break;
-                case "4":
                     return;     // zurück zum Hauptmenü
                 default:
                     Console.ForegroundColor = ConsoleColor.Red;
